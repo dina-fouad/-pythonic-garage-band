@@ -1,5 +1,5 @@
 
-from abc import ABC, abstractmethod, abstractstaticmethod, abstractclassmethod
+from abc import ABC, abstractmethod
 
 class Band:
     instances = []
@@ -11,24 +11,19 @@ class Band:
 
 
     def play_solos(self):
-      solos = []
-      for item in self.members:
-            solos.append(item.play_solo())
-      return solos
+       pass
 
 
 
     def __str__(self):
-      return(f"i am  {self.name} and I {self.members}" )
+      pass
     def __repr__(self):
-      return f"Band instance. name={self.name}"
+     pass
 
-    @classmethod
-    def to_list(cls):
-        return cls.instances
+   
 
 
-class Musician():
+class Musician(ABC):
 
    def __init__(self,name):
     self.name=name
@@ -108,4 +103,4 @@ class Drummer(Musician):
 
 
 
-
+  
