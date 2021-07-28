@@ -107,25 +107,5 @@ class Drummer(Musician):
 
 
 
-if __name__ == "__main__":
-    heros = Band('heros',members=['Jhon','Devid','Lionel'])
-    fluffy = Band('fluffy',["fsa",'sdfds','dsfds'])
-    Jhon = Guitarist('Jhon')
-    Devid=Drummer('Devid')
-    Lionel = Bassist('Lionel')
-    
-    print(Musician.members)    
-    print(Devid.play_solo())
-    print(Jhon.play_solo())
-    print(Lionel.play_solo())
-   
-    
-    print(Band.bandslist)
-    print(fluffy.members)
-    print(heros.members)
-    print(fluffy.to_list())
 
-    print(Jhon.get_instrument())
-    print(Devid.get_instrument())
-    print(Lionel.get_instrument())
 
