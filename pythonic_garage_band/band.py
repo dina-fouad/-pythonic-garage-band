@@ -11,8 +11,14 @@ class Band:
 
 
     def play_solos(self):
-       pass
-
+        solos=[]
+        for item in self.members:
+            solos.append(item.play_solo())
+        return solos
+    
+    @classmethod
+    def to_list(cls):
+        return cls.instances
 
 
     def __str__(self):
